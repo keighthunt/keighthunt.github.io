@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-export default class Header extends Component {
+import {Section} from './Shared';
+
+export default class Contact extends Component {
     render() {
         return (
-            <div
-                gradient
+            <Section
+                name={"Contact"}
             >
                 <h1>Contact</h1>
-            </div>
+            </Section>
         );
     }
 }

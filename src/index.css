@@ -59,6 +59,11 @@ table {
 
 body {
   font-family: "Helvetica Neue";
+  color: #444649;
+}
+a {
+  text-decoration: none;
+  color: #444649;
 }
 
 .flex {

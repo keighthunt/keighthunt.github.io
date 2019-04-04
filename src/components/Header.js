@@ -6,7 +6,7 @@ const Color = styled.span`
 `;
 
 const FullScreen = styled.div`
-    height: 100vh;
+    height: calc(100vh - 50px);
     width: 100vw;
     color: #fff
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -50,58 +50,64 @@ const FullScreen = styled.div`
             background-position: 0% 50%
         }
     }
+    .header-container {
+        border: 4px solid #fff;
+        padding: 15px 20px;
+    }
+    
     h1 {
         font-size: 32pt;
         line-height: 36pt
         overflow: hidden;
         margin: 0 auto;
         white-space: nowrap;
-        
-        &:first-of-type {
-            border-right: .15em solid white;
-            animation: 
-                typing 1.5s steps(10, end),
-                blink-caret .5s step-end infinite;
-            animation-delay: 2s;
+    }
+`;
+
+const Navigation = styled.nav`
+    border-bottom: 2px solid #444649;
+    div {
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 1024px;
+        a {
+            display: inline-block;
+            text-transform: uppercase;
+            width: 20%;
+            padding: 16px 0;
+            text-align: center;
+            cursor: pointer;
         }
-        
-        &:last-of-type {
-            border-right: .15em solid white;
-            animation: 
-                typing 3.5s steps(30, end),
-                blink-caret .5s step-end infinite;
-            animation-delay: 7s;
-        }
     }
-    
-    @keyframes typing {
-      0% { width: 0 }
-      100% { width: 100% }
-    }
-    
-    /* The typewriter cursor effect */
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: white }
-    }
-    
-    
 `;
 
 export default class Header extends Component {
     render() {
-        let resumeData = this.props.resumeData;
+        const { navigation } = this.props.resumeData;
         return (
-            <FullScreen
-                dark
-                className="flex"
-            >
-                <div className="header-container">
-                    <h1>Hello...</h1>
-                    <h1>My name is <Color color={'pink'}>Kate Hunt</Color>,</h1>
-                    <h1>I'm a Front End Developer.</h1>
-                </div>
-            </FullScreen>
+            <div>
+                <FullScreen
+                    dark
+                    className="flex"
+                >
+                    <div className="header-container">
+                        <h1>Hello...</h1>
+                        <h1>My name is <Color color={'pink'}>Kate Hunt</Color>,</h1>
+                        <h1>I'm a Front End Developer from London.</h1>
+                    </div>
+                </FullScreen>
+                <Navigation>
+                    <div>
+                        {
+                            navigation && navigation.map((item, i)=>{
+                                return(
+                                    <a key={i + item} href={"#" + item}>{item}</a>
+                                )
+                            })
+                        }
+                    </div>
+                </Navigation>
+            </div>
         );
     }
 }
