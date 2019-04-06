@@ -26,7 +26,7 @@ export default class Experience extends Component {
                                     className="vertical-timeline-element--work"
                                     date={data.dates}
                                     icon={isWork ? <FaLaptop/> : <FaGraduationCap/>}
-                                    iconStyle={{ backgroundColor: '#f1a7f1', backgroundImage: 'linear-gradient(315deg, #fad0c4 0%, #f1a7f1 100%)', color: '#fff' }}
+                                    iconStyle={{ backgroundColor: isWork? '#4e4376' : '#2b5876', color: '#fff' }}
                                 >
                                     <h3 className="vertical-timeline-element-title">{data.company}</h3>
                                     <h4 className="vertical-timeline-element-subtitle">{data.job_title}</h4>
