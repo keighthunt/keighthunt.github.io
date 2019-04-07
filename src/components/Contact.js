@@ -6,9 +6,7 @@ export default class Contact extends Component {
         return (
             <Section
                 name={"Contact"}
-            >
-                <h1>Contact</h1>
-            </Section>
+            />
         );
     }
 }

@@ -14,8 +14,6 @@ export default class Experience extends Component {
                 name={"Experience"}
                 color={'#f5f5f5'}
             >
-                <h1>Experience</h1>
-
                 <VerticalTimeline>
                     {
                         experience && experience.map((data, i)=>{

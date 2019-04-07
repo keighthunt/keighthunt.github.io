@@ -7,9 +7,7 @@ export default class Skills extends Component {
             <Section
                 name={"Skills"}
                 color={'#f5f5f5'}
-            >
-                <h1>Skills</h1>
-            </Section>
+            />
         );
     }
 }

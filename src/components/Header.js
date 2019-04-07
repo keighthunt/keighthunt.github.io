@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { debounce } from './Shared';
+
 const Color = styled.span`
     color: ${props => props.color};
 `;
 
 const FullScreen = styled.div`
-    height: calc(100vh - 50px);
+    height: 100vh;
     width: 100vw;
     color: #000;
     
@@ -16,6 +18,7 @@ const FullScreen = styled.div`
         font-size: 7vw;
         line-height: 110%;
         display: inline-block;
+        font-family: 'Lobster', cursive;
         
         & + h1 {
             margin: 0 0 0 15px;
@@ -68,12 +71,12 @@ const FullScreen = styled.div`
     
     .delay-1 {
         -webkit-animation-delay: .3s;
-        animation-delay: .3;
+        animation-delay: .3s;
     }
     
     .delay-2 {
         -webkit-animation-delay: 1s;
-        animation-delay: 1;
+        animation-delay: 1s;
     }
 `;
 
@@ -183,6 +186,12 @@ const Navigation = styled.nav`
     
     @media screen and (min-width: 668px) {
         border-bottom: 2px solid #444649;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #fff;
+        height: 50px;
+        width: 100%;
         &.stick {
             position: fixed;
             z-index: 1;
@@ -208,14 +217,6 @@ const Navigation = styled.nav`
     }
 `;
 
-const debounce = (func, wait) => {
-    let timeout;
-    return (...args) => {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(this, args), wait);
-    }
-};
-
 export default class Header extends Component {
 
     constructor(props) {
@@ -234,20 +235,18 @@ export default class Header extends Component {
     }
 
     handleScroll = () => {
-        const div = document.getElementById("nav");
+        const div = document.getElementById("hero");
         const navPosition = div.getBoundingClientRect();
-        return this.setState({ navPosition: navPosition.top })
+        return this.setState({ navPosition: navPosition.bottom })
     };
 
     render() {
         const { navigation } = this.props.resumeData;
-        const isNavAtTop = this.state.navPosition <= 0;
-        console.log(this.state.navPosition);
-
-        console.log(isNavAtTop);
+        const isNavAtTop = this.state.navPosition <= 50;
         return (
             <div>
                 <FullScreen
+                    id="hero"
                 >
                     <div className="hero">
                         <div className="header-container">
@@ -267,7 +266,6 @@ export default class Header extends Component {
                     </div>
                 </FullScreen>
                 <Navigation
-                    id="nav"
                     className={(isNavAtTop) ? 'stick' : ''}
                 >
                     <div id="menuToggle">

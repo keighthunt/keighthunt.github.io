@@ -46,6 +46,7 @@ let resumeData = {
     ],
     "portfolio": [
         {
+
             "name": "Cult Beauty"
         },
         {
