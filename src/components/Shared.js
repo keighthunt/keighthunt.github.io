@@ -56,7 +56,7 @@ export class InView extends Component {
         const { isVisible } = this.state;
 
         return (
-            <span id={id} className={isVisible ? animate : ''}>
+            <span id={id} className={isVisible ? animate : ""}>
                 {children}
             </span>
         );
@@ -119,27 +119,12 @@ const Section = ({
     );
 };
 
-/*export default class Modal extends Component {
-    render() {
-        const data = this.props.data;
-
-        return (
-            <Modal open={open} onClose={this.onCloseModal} little>
-                <h2>Simple centered modal</h2>
-            </Modal>
-        );
-    }
-}*/
-
 const ColumnThird = styled.div`
   flex: 0 0 33.3333%;
   display: flex;
   margin-bottom: 15px;
   padding-right: 30px;
   min-height: 36px;
-  & > .promise-loader-div {
-    width: 100%;
-  }
   &.flex-wrap {
     flex-wrap: wrap;
   }
@@ -148,16 +133,6 @@ const ColumnThird = styled.div`
   }
   &.no-marg {
     margin: 0;
-  }
-  .container-element {
-    position: relative;
-    vertical-align: top;
-    margin-bottom: 10px;
-    width: 100%;
-    display: inline-block;
-    & + .container-element {
-      margin-left: 20px;
-    }
   }
 `;
 

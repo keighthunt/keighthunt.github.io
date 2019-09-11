@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import {Section, ColumnHalf, ColumnThird, ColumnTwoThirds} from './Shared';
+import {Section, ColumnHalf} from './Shared';
 import kate from '../img/katehunt.png';
 
 const AboutSection = styled(Section)`
     padding-bottom: 0;
     background: red;
+    
+    p + p {
+        margin-top: 10px;
+    }
 `;
 
 export default class About extends Component {
@@ -13,16 +17,19 @@ export default class About extends Component {
         return (
             <AboutSection
                 name={"About"}
-                color={"#fff"}
+                color={'#f5f5f5'}
                 padding={"30px 0 0 0;"}
             >
                 <div>
-                    <ColumnTwoThirds no-pad no-marg>
+                    <ColumnHalf>
                         <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            <p>I'm a London, UK based Front‑End Developer with 6+ years of professional experience, with a passion for UX design. I am comfortable in coding in mobile environments and responsive design, all with keeping in mind W3C standards, SEO and capabilities of different web browsers and operating systems.</p>
+                            <p>In the past year, I have embarked on a new role as Lead Developer at my current place of employment building my management style</p>
                         </div>
-                        <img style={{maxHeight: '200px'}} src={kate} alt="Kate Hunt portrait" />
-                    </ColumnTwoThirds>
+                        <div>
+                            <img style={{maxHeight: '200px'}} src={kate} alt="Kate Hunt portrait" />
+                        </div>
+                    </ColumnHalf>
                 </div>
             </AboutSection>
         );

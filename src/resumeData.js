@@ -46,23 +46,50 @@ let resumeData = {
     ],
     "portfolio": [
         {
-
-            "name": "Cult Beauty"
-        },
-        {
             "name": "Wallpaper*",
             "website": "www.wallpaper.com",
+            "url": "http://wallpaper.com",
+            "main_image": require("./img/wallpaper.png"),
             "content": [
                 "The most pressurised, in terms of learning and learning quickly, piece of work completed on Wallpaper*, part of Time Inc. UK, was a project called 'Triptych groupage' (not live), build to achieve multiple add impressions on the homepage and hub pages by injecting a parallax carousel taking creatives from DFP JSON file.",
                 "Another piece of work requiring a lot of JavaScript, was integrating a third party engine called LiftIgniter to deliver personalised content to the user based on their interactions with the site at critical points, e.g. the homepage, article pages related content, and search page",
-                "Other work includes:"
+            ],
+            "other": [
+                "Installing Sass Compass on projects virtual box and convert css files to SASS",
+                "Gallery image optimisation for mobile and desktop, only loading necessary image sizes, and when they are needed, depending on device and display resolution",
+                "Rebuild search page based on new design using JS autocomplete textfield",
+                "Rebuild scrollers based on new design and implement touch swipe for mobile"
             ]
         },
         {
-            "name": "Powder"
+            "name": "Powder",
+            "website": "www.thisispowder.com/wishlist",
+            "url": "http://thisispowder.com/wishlist",
+            "main_image": require("./img/thisispowder-wishlist.png"),
         },
         {
-            "name": "Beyond Retro"
+            "name": "Trusted Reviews",
+            "website": "www.trustedreviews.com",
+            "url": "http://trustedreviews.com",
+            "main_image": require("./img/trustedreviews.png"),
+        },
+        {
+            "name": "Beyond Retro",
+            "website": "www.beyondretro.com",
+            "url": "http://beyondretro.com",
+            "main_image": require("./img/beyondretro.png"),
+        },
+        {
+            "name": "Beyond Retro",
+            "website": "www.houseofkaizen.com",
+            "url": "http://houseofkaizen.com",
+            "main_image": require("./img/houseofkaizen.png"),
+        },
+        {
+            "name": "The Times Store",
+            "website": "store.thetimes.co.uk",
+            "url": "http://store.thetimes.co.uk",
+            "main_image": require("./img/thetimes-store.png"),
         }
     ]
 };

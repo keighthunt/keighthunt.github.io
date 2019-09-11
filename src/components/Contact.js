@@ -6,6 +6,7 @@ export default class Contact extends Component {
         return (
             <Section
                 name={"Contact"}
+                color={'#f5f5f5'}
             />
         );
     }

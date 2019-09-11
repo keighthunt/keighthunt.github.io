@@ -6,7 +6,7 @@ export default class Skills extends Component {
         return (
             <Section
                 name={"Skills"}
-                color={'#f5f5f5'}
+                color={'#fff'}
             />
         );
     }
