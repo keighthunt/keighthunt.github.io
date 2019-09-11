@@ -3,43 +3,34 @@ let resumeData = {
     "experience": [
         {
             "company":"Cult Beauty",
-            "job_title": "Lead Front End Developer",
-            "job_description": "",
+            "job_title": ["Lead Front End Developer"],
             "dates": "March 2017 - Present",
             "icon": "work"
         },
         {
             "company":"Time Inc. UK",
-            "job_title": "Front End Developer",
-            "job_description": "",
+            "job_title": ["Front End Developer"],
             "dates": "September 2015 - March 2017",
             "icon": "work"
         },
         {
             "company":"Beyond Retro",
-            "job_title": "Front End Developer",
-            "job_description": "",
+            "job_title": ["Front End Developer"],
             "dates": "March 2015 - September 2015",
             "icon": "work"
         },
         {
             "company":"House of Kaizen",
-            "job_title": "Head of Technology",
-            "job_description": "",
-            "dates": "March 2014 - March 2015",
-            "icon": "work"
-        },
-        {
-            "company":"House of Kaizen",
-            "job_title": "Junior Front End Developer",
-            "job_description": "",
-            "dates": "September 2012 - March 2014",
+            "job_title": [
+                "Head of Technology",
+                "Junior Front End Developer"
+            ],
+            "dates": "September 2012 - March 2015",
             "icon": "work"
         },
         {
             "company":"Queen Mary, University of London",
-            "job_title": "Computer Science BSc",
-            "job_description": "",
+            "job_title": ["Computer Science BSc"],
             "dates": "September 2009 - September 2012",
             "icon": "school"
         }

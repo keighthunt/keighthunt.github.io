@@ -27,10 +27,13 @@ export default class Experience extends Component {
                                     iconStyle={{ backgroundColor: isWork? '#4e4376' : '#2b5876', color: '#fff' }}
                                 >
                                     <h3 className="vertical-timeline-element-title">{data.company}</h3>
-                                    <h4 className="vertical-timeline-element-subtitle">{data.job_title}</h4>
-                                    <p>
-                                        {data.job_description}
-                                    </p>
+                                    {
+                                        data.job_title && data.job_title.map((job, i)=>{
+                                            return(
+                                                <h4 className="vertical-timeline-element-subtitle">{job}</h4>
+                                            )
+                                        })
+                                    }
                                 </VerticalTimelineElement>
                             )
                         })
