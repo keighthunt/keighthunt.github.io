@@ -62,16 +62,25 @@ export default class Portfolio extends Component {
                                     <p>{item.name}</p>
                                     <a href={item.url} target="_blank">{item.website}</a>
 
+                                    {
+                                        item.content && item.content.map((content, i)=>{
+                                            return(
+                                                <p key={i + content}>{content}</p>
+                                            )
+                                        })
+                                    }
+
                                     {item.other ? 
                                         <div>
                                             <p>Other work includes:</p>
                                             <ul>
-                                                {item.other.map((item, i)=>{
-                                                     return(
-                                                         <li>{item}</li>
-                                                     )
-                                                });
-                                               
+                                            {
+                                                item.other.map((other, i)=>{
+                                                    return(
+                                                        <li key={i + other}>{other}</li>
+                                                    )
+                                                })
+                                            }
                                             </ul>
                                         </div>
                                         : null

@@ -1,5 +1,5 @@
 let resumeData = {
-    "navigation": ["About", "Experience", "Skills", "Portfolio", "Contact"],
+    "navigation": ["hero", "About", "Experience", "Skills", "Portfolio", "Contact"],
     "experience": [
         {
             "company":"Cult Beauty",
