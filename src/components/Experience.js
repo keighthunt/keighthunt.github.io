@@ -30,7 +30,7 @@ export default class Experience extends Component {
                                     {
                                         data.job_title && data.job_title.map((job, i)=>{
                                             return(
-                                                <h4 className="vertical-timeline-element-subtitle">{job}</h4>
+                                                <h4 key={experience + i} className="vertical-timeline-element-subtitle">{job}</h4>
                                             )
                                         })
                                     }

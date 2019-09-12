@@ -14,6 +14,8 @@ const AboutSection = styled(Section)`
 
 export default class About extends Component {
     render() {
+        const { about } = this.props.resumeData;
+
         return (
             <AboutSection
                 name={"About"}
@@ -23,8 +25,13 @@ export default class About extends Component {
                 <div>
                     <ColumnHalf>
                         <div>
-                            <p>I'm a London, UK based Front‑End Developer with 6+ years of professional experience, with a passion for UX design. I am comfortable in coding in mobile environments and responsive design, all with keeping in mind W3C standards, SEO and capabilities of different web browsers and operating systems.</p>
-                            <p>In the past year, I have embarked on a new role as Lead Developer at my current place of employment building my management style</p>
+                            {
+                                about && about.map((about, i)=>{
+                                    return(
+                                        <p key={about + i}>{about}</p>
+                                    )
+                                })
+                            }
                         </div>
                         <div>
                             <img style={{maxHeight: '200px'}} src={kate} alt="Kate Hunt portrait" />

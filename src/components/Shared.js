@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-/*import Modal from 'react-responsive-modal';*/
 
 const debounce = (func, wait) => {
     let timeout;
@@ -109,9 +108,11 @@ const Section = ({
 
     return (
         <SectionContainer color={color} id={name} padding={padding}>
-            <InView id={name + 'header'} animate={'slideInLeft'}>
-                <h2>{name}</h2>
-            </InView>
+            { name ?
+                <InView id={name + 'header'} animate={'slideInLeft'}>
+                    <h2>{name}</h2>
+                </InView>
+            : null }
             <div className="wrapper">
                 {children}
             </div>
