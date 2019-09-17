@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styled from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
 
 const debounce = (func, wait) => {
     let timeout;
@@ -50,17 +50,24 @@ export class InView extends Component {
         const {
             children,
             id,
-            animate
+            animate,
+            className
         } = this.props;
         const { isVisible } = this.state;
 
         return (
-            <span id={id} className={isVisible ? animate : ""}>
+            <span id={id} className={`${className} ${isVisible ? animate : ""}`}>
                 {children}
             </span>
         );
     }
 }
+
+const GlobalStyle = createGlobalStyle`
+  body {
+
+  }
+`;
 
 const SectionContainer = styled.section`
     background: ${props => (props.color ? props.color : '')};
@@ -74,6 +81,10 @@ const SectionContainer = styled.section`
     }
     hr {
         opacity: 0;
+    }
+
+    p {
+        line-height: 1.5em;
     }
     
     .slideInLeft {
@@ -97,18 +108,24 @@ const SectionContainer = styled.section`
         padding: 0 20px;
         max-width: 1024px;
     }
+
+    .columnHalf {
+        display: inline-block;
+        width: 50%;
+    }
 `;
 
 const Section = ({
     children,
     name,
     color,
-    padding
+    padding,
+    noHeader
 }) => {
 
     return (
         <SectionContainer color={color} id={name} padding={padding}>
-            { name ?
+            { !noHeader ?
                 <InView id={name + 'header'} animate={'slideInLeft'}>
                     <h2>{name}</h2>
                 </InView>
@@ -124,7 +141,6 @@ const ColumnThird = styled.div`
   flex: 0 0 33.3333%;
   display: flex;
   margin-bottom: 15px;
-  padding-right: 30px;
   min-height: 36px;
   &.flex-wrap {
     flex-wrap: wrap;

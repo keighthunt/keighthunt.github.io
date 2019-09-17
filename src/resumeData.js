@@ -2,11 +2,66 @@ let resumeData = {
     "navigation": ["About", "Experience", "Skills", "Portfolio", "Contact"],
     "about": [
         "Hello!",
-        "I’m a London, UK based front end developer, with over 7 years of professional experience and a passion for UX design and software architecture. I gathered my experience through exposure to many types of companies, from e-commerce to travel and finance.",
-        "My passion for front end development stemmed from     and has been growing ever since, into new industries and ",
-        "In the past year my career has taken me to a different level and I’m currently honing my managerial style",
+        "I’m a London, UK based Front End Developer, with over 7 years of professional experience and a passion for UX design and software architecture. I gathered my experience through exposure to many types of business, with e-commerse being a very large part, but also from travel, finance.",
+        "In the past year my career has taken me to a different level and I’m currently refining my managerial style as a Lead Developer, spending large parts of my time mentoring and helping others flourish.",
         "I most prefer working in an agile way (with the exception of hot desking!)"
     ],
+    "skills": {
+        "left": [
+            {
+                "title": "Front End",
+                "content": [
+                    "React",
+                    "Node.js",
+                    "JavaScript",
+                    "HTML",
+                    "Pug",
+                    "SCSS/Sass/CSS",
+                    "Responsive, adaptive & cross browser"
+                ]
+            },
+            {
+                "title": "Version Control",
+                "content": [
+                    "Git",
+                ]
+            },
+            {
+                "title": "CMS",
+                "content": [
+                    "Magento",
+                    "Concrete5",
+                    "Drupal"
+                ]
+            }
+        ],
+        "right":[
+            {
+                "title": "Experience Working with",
+                "content": [
+                    "Docker",
+                    "Jenkins",
+                    "CI",
+                    "PostgreSQL",
+                    "MySQL",
+                    "Google analytics",
+                    "Google Tag Manager",
+                    "Sentry",
+                    "Loggly",
+                    "Visual Website Optimizer",
+                    "Optimizely"
+                ]
+            },
+            {
+                "title": "Design Tools",
+                "content": [
+                    "Photoshop",
+                    "Sketch",
+                    "Balsamiq"
+                ]
+            },
+        ]
+    },
     "experience": [
         {
             "company":"Cult Beauty",

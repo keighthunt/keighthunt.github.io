@@ -26,6 +26,7 @@ export default class Contact extends Component {
         return (
             <Section
                 color={'#f5f5f5'}
+                name={"Contact"}
             >
             	<IconContainer>
 	            	<ContactIcon target="_blank" href="http://www.linkedin.com/in/keighthunt">

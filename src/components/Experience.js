@@ -21,16 +21,16 @@ export default class Experience extends Component {
                             return(
                                 <VerticalTimelineElement
                                     key={i + data}
-                                    className="vertical-timeline-element--work"
+                                    className={"vertical-timeline-element--work"}
                                     date={data.dates}
                                     icon={isWork ? <FaLaptop/> : <FaGraduationCap/>}
                                     iconStyle={{ backgroundColor: isWork? '#4e4376' : '#2b5876', color: '#fff' }}
                                 >
-                                    <h3 className="vertical-timeline-element-title">{data.company}</h3>
+                                    <h3 className={"vertical-timeline-element-title"}>{data.company}</h3>
                                     {
                                         data.job_title && data.job_title.map((job, i)=>{
                                             return(
-                                                <h4 key={experience + i} className="vertical-timeline-element-subtitle">{job}</h4>
+                                                <h4 key={experience + i} className={"vertical-timeline-element-subtitle"}>{job}</h4>
                                             )
                                         })
                                     }

@@ -11,7 +11,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-icons": "^3.5.0",
+    "react-icons": "^3.7.0",
     "react-modal": "^3.8.1",
     "react-scripts": "2.1.8",
     "react-vertical-timeline-component": "^2.3.1",

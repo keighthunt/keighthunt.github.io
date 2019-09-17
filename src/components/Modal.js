@@ -19,7 +19,7 @@ const Portal = ({ children }) => {
 const Modal = ({ children, toggle, open }) => (
     <Portal>
         {open && (
-            <ModalWrapper className='TEST'>
+            <ModalWrapper>
                 <ModalCard>
                     <CloseButton onClick={toggle}>
                         <img src="https:icon.now.sh/x/ff0000" alt="close" />

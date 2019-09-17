@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { Section, InView } from './Shared';
 import styled from 'styled-components';
 import Modal from 'react-modal';
+import cancel from '../assets/cancel.svg'
 
 const customStyles = {
   content : {
-      width : '680px',
-      left: "50%",
-      marginLeft: "-360px"
+      
   }
 };
 
@@ -33,11 +32,16 @@ const Item = styled.div`
         margin-right: auto;
         max-width: 300px;
         width: 100%;
+        &.margin {
+            margin-left: auto;
+        }
+
     }
 `;
 
 const ModalContent = styled.div`
     margin: 0 auto;
+    max-width: 680px;
     position: relative;
     span {
         position: absolute;
@@ -70,6 +74,15 @@ const ModalContent = styled.div`
     }
 `;
 
+const Close = styled.img`
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    z-index: 1;
+`;
+
 Modal.setAppElement('#modal')
 
 export default class Portfolio extends Component {
@@ -95,7 +108,7 @@ export default class Portfolio extends Component {
                 {
                     portfolio && portfolio.map((item, i)=>{
                         return(
-                            <InView id={'portfolio' + i} key={item + i} animate={'flipInX'}>
+                            <InView id={'portfolio' + i} key={item + i} animate={'flipIn'}>
                                 <Item
                                     background={item.main_image}
                                     onClick={e => this.clickHandler(e, i)}
@@ -107,15 +120,15 @@ export default class Portfolio extends Component {
                                     onRequestClose={this.hideModal}
                                     style={customStyles}
                                 >
+                                    <Close src={cancel} onClick={this.hideModal} />
                                     <ModalContent>
-                                        <span onClick={this.hideModal}>x</span>
                                         <h2>{item.name}</h2>
                                         <a href={item.url} target="_blank">{item.website}</a>
 
                                         {
                                             item.content && item.content.map((content, i)=>{
                                                 return(
-                                                    <p key={i + content}>{content}</p>
+                                                    <p key={content + i}>{content}</p>
                                                 )
                                             })
                                         }
@@ -127,7 +140,7 @@ export default class Portfolio extends Component {
                                                 {
                                                     item.other.map((other, i)=>{
                                                         return(
-                                                            <li key={i + other}>{other}</li>
+                                                            <li key={other + i}>{other}</li>
                                                         )
                                                     })
                                                 }
@@ -142,7 +155,7 @@ export default class Portfolio extends Component {
                                                 {
                                                     item.technology.map((tech, i)=>{
                                                         return(
-                                                            <li key={i + tech}>{tech}</li>
+                                                            <li key={tech + i}>{tech}</li>
                                                         )
                                                     })
                                                 }

@@ -13,7 +13,7 @@ class App extends Component {
         <div className="App">
             <Header resumeData={resumeData} />
             <About resumeData={resumeData} />
-            <Skills />
+            <Skills resumeData={resumeData} />
             <Experience resumeData={resumeData} />
             <Portfolio resumeData={resumeData} />
             <Contact />

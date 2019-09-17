@@ -277,7 +277,7 @@ export default class Header extends Component {
                             {
                                 navigation && navigation.map((item, i)=>{
                                     return(
-                                        <a key={i + item} href={"#" + item}><li>{item}</li></a>
+                                        <a key={item + i} href={"#" + item}><li>{item}</li></a>
                                     )
                                 })
                             }

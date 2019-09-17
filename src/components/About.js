@@ -3,12 +3,23 @@ import styled from 'styled-components';
 import {Section, ColumnHalf} from './Shared';
 import kate from '../img/katehunt.png';
 
-const AboutSection = styled(Section)`
-    padding-bottom: 0;
-    background: red;
-    
-    p + p {
-        margin-top: 10px;
+const AboutSection = styled(ColumnHalf)`
+    p {
+        margin-bottom: 10px;
+    }
+    div {
+        padding-right: 10px;
+    }
+
+    @media screen and (max-width: 667px) {
+        display: block;
+
+        div {
+            padding: 0;
+        }
+        .right {
+             text-align: right;   
+        }
     }
 `;
 
@@ -17,14 +28,14 @@ export default class About extends Component {
         const { about } = this.props.resumeData;
 
         return (
-            <AboutSection
+            <Section
                 name={"About"}
                 color={'#f5f5f5'}
-                padding={"30px 0 0 0;"}
+                padding={"30px 0 70px;"}
             >
                 <div>
-                    <ColumnHalf>
-                        <div>
+                    <AboutSection>
+                        <div className={'left'}>
                             {
                                 about && about.map((about, i)=>{
                                     return(
@@ -33,12 +44,12 @@ export default class About extends Component {
                                 })
                             }
                         </div>
-                        <div>
-                            <img style={{maxHeight: '200px'}} src={kate} alt="Kate Hunt portrait" />
+                        <div className={'right'}>
+                            <img style={{maxHeight: '250px'}} src={kate} alt="Kate Hunt portrait" />
                         </div>
-                    </ColumnHalf>
+                    </AboutSection>
                 </div>
-            </AboutSection>
+            </Section>
         );
     }
 }
