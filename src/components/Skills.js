@@ -9,15 +9,14 @@ const SkillsContainer = styled.div`
 	border-radius: 10px;
 	border: 1px solid #f5f5f5;
 
-	p {
-		
-	}
-
 	.skill-type {
 		width: 50%;
 		display: inline-block;
 		text-align: center;
 		vertical-align: top;
+		@media screen and (max-width: 667px) {
+			width: 100%;
+		}
 
 		h3 {
 			font-family: 'Lobster',cursive;
@@ -42,7 +41,7 @@ const SkillsContainer = styled.div`
 	}
 `; 
 
-const Test = ({
+const SkillType = ({
 	index,
 	skill
 }) => {
@@ -51,7 +50,7 @@ const Test = ({
 			<h4>{skill.title}</h4>
 			{skill.content.map((content, i)=>{
 				return (
-					<p>{content}</p>
+					<p key={content + i}>{content}</p>
 				)
 			})}
 		</InView>
@@ -74,7 +73,7 @@ export default class Skills extends Component {
 	            		{skills ?
 	            			skills.left.map((left, i)=>{
 	            				return(
-	            					<Test index={i} skill={left} />
+	            					<SkillType key={left + i} index={i} skill={left} />
 	            				);
 
 	            			})
@@ -84,7 +83,7 @@ export default class Skills extends Component {
 	            		{skills ?
 	            			skills.right.map((right, i)=>{
 	            				return(
-	            					<Test index={i} skill={right} />
+	            					<SkillType key={right + i} index={i} skill={right} />
 	            				);
 
 	            			})

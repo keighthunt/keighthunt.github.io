@@ -30,13 +30,13 @@ export default class Contact extends Component {
             >
             	<IconContainer>
 	            	<ContactIcon target="_blank" href="http://www.linkedin.com/in/keighthunt">
-	            		<img src={linkedIn} />
+	            		<img src={linkedIn} alt={'LinkedIn'} />
 	        		</ContactIcon>
 	            	<ContactIcon target="_blank" href="https://github.com/keighthunt">
-	            		<img src={github} />
+	            		<img src={github} alt={'GitHub'} />
 	        		</ContactIcon>
 	        		<ContactIcon href={Pdf} target="_blank">
-	            		<img src={cv} />
+	            		<img src={cv} alt={"Open CV"}/>
 	        		</ContactIcon>
 	        		<p>Kate Hunt &#9400;</p>
         		</IconContainer>

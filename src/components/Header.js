@@ -39,6 +39,14 @@ const FullScreen = styled.div`
         width: 100vw;
         position: absolute
     }
+
+    .hero {
+      position: relative;
+      background: #2b5876;
+      background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+      background: linear-gradient(to right, #4e4376, #2b5876);
+      height: 100%;
+    }
     
     .text {
         position: relative;
@@ -243,6 +251,7 @@ export default class Header extends Component {
     render() {
         const { navigation } = this.props.resumeData;
         const isNavAtTop = this.state.navPosition <= 50;
+
         return (
             <div>
                 <FullScreen
@@ -277,7 +286,7 @@ export default class Header extends Component {
                             {
                                 navigation && navigation.map((item, i)=>{
                                     return(
-                                        <a key={item + i} href={"#" + item}><li>{item}</li></a>
+                                        <a key={`#${item}`} href={"#" + item}><li>{item}</li></a>
                                     )
                                 })
                             }

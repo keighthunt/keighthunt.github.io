@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styled, {createGlobalStyle} from 'styled-components';
+import styled from 'styled-components';
 
 const debounce = (func, wait) => {
     let timeout;
@@ -63,12 +63,6 @@ export class InView extends Component {
     }
 }
 
-const GlobalStyle = createGlobalStyle`
-  body {
-
-  }
-`;
-
 const SectionContainer = styled.section`
     background: ${props => (props.color ? props.color : '')};
     padding: ${props => (props.padding ? props.padding : '30px 0')};
@@ -85,6 +79,7 @@ const SectionContainer = styled.section`
 
     p {
         line-height: 1.5em;
+        margin-bottom: 2vh;
     }
     
     .slideInLeft {
@@ -112,6 +107,52 @@ const SectionContainer = styled.section`
     .columnHalf {
         display: inline-block;
         width: 50%;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flipIn {
+      > div {
+        animation: flipIn .75s ease both;
+      }
+    }
+
+    @keyframes flipIn {
+      from {
+        -webkit-transform: perspective(400px) rotateY(90deg);
+        transform: perspective(400px) rotateY(90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0; }
+      40% {
+        -webkit-transform: perspective(400px) rotateY(-20deg);
+        transform: perspective(400px) rotateY(-20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in; }
+      60% {
+        -webkit-transform: perspective(400px) rotateY(10deg);
+        transform: perspective(400px) rotateY(10deg);
+        opacity: 1; }
+      80% {
+        -webkit-transform: perspective(400px) rotateY(-5deg);
+        transform: perspective(400px) rotateY(5deg); }
+      to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        opacity: 1; } }
+
+    @keyframes starsAnimation {
+      from {
+        transform: translateY(-2000px);
+      }
+      to {
+        transform: translateY(0px);
+      }
     }
 `;
 

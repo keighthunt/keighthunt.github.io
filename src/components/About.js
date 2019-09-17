@@ -4,8 +4,9 @@ import {Section, ColumnHalf} from './Shared';
 import kate from '../img/katehunt.png';
 
 const AboutSection = styled(ColumnHalf)`
-    p {
-        margin-bottom: 10px;
+    align-items: flex-end;
+    .left {
+        margin-bottom: 10vh;
     }
     div {
         padding-right: 10px;

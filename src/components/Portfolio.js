@@ -123,7 +123,7 @@ export default class Portfolio extends Component {
                                     <Close src={cancel} onClick={this.hideModal} />
                                     <ModalContent>
                                         <h2>{item.name}</h2>
-                                        <a href={item.url} target="_blank">{item.website}</a>
+                                        <a href={item.url} target={"_blank"} rel={"noopener noreferrer"}>{item.website}</a>
 
                                         {
                                             item.content && item.content.map((content, i)=>{
