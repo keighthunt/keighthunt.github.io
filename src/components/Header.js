@@ -102,10 +102,6 @@ const Navigation = styled.nav`
             transition: color 0.3s ease;
         }
         
-        a:hover {
-            color: tomato;
-        }
-        
         #menuToggle {
              display: block;
              position: relative;
