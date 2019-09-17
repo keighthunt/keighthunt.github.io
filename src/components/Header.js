@@ -274,7 +274,7 @@ export default class Header extends Component {
                     className={(isNavAtTop) ? 'stick' : ''}
                 >
                     <div id="menuToggle">
-                        <input type="checkbox" />
+                        <input type="checkbox" ref={'menu'} />
                         <span/>
                         <span/>
                         <span/>
@@ -282,7 +282,9 @@ export default class Header extends Component {
                             {
                                 navigation && navigation.map((item, i)=>{
                                     return(
-                                        <a key={`#${item}`} href={"#" + item}><li>{item}</li></a>
+                                        <a key={`#${item}`} href={"#" + item} onClick={()=>{
+                                            this.refs.menu.checked = !this.refs.menu.checked
+                                        }}><li>{item}</li></a>
                                     )
                                 })
                             }

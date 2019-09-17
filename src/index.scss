@@ -191,7 +191,7 @@ $stars-big: stars(100);
 }
 
 .ReactModal__Body--open {
-  overflow: hidden;
+  overflow: hidden!important;
 }
 
 

@@ -56,7 +56,7 @@ export class InView extends Component {
         const { isVisible } = this.state;
 
         return (
-            <span id={id} className={`${className} ${isVisible ? animate : ""}`}>
+            <span id={id} className={`${className ? className : ''} ${isVisible ? animate : ""}`}>
                 {children}
             </span>
         );
@@ -78,7 +78,7 @@ const SectionContainer = styled.section`
     }
 
     p {
-        line-height: 1.5em;
+        line-height: 1.15em;
         margin-bottom: 2vh;
     }
     

@@ -4,10 +4,11 @@ import styled from 'styled-components';
 
 const SkillsContainer = styled.div`
 	background: white;
-	margin-top: -117px;
+	margin-top: -87px;
 	box-shadow: 1px 1px 5px #ccc;
 	border-radius: 10px;
 	border: 1px solid #f5f5f5;
+	padding: 3vh 0;
 
 	.skill-type {
 		width: 50%;
@@ -25,13 +26,13 @@ const SkillsContainer = styled.div`
 		h4 {
 			color: #2b5876;
 			font-weight: bold;
-			margin-bottom: 15px;
-
+			margin: 3vh;
+    		line-height: 1.15em;
 		}
 	}
 	.skill-subtype {
 		display: block;
-		margin: 7vh 0;
+		padding: 1vh 0;
 		opacity: 0
 
 		&.height {
@@ -66,6 +67,7 @@ export default class Skills extends Component {
             <Section
                 name={"Skills"}
                 color={'#fff'}
+                padding={'0 0 30px;'}
                 noHeader
             >
 	        	<SkillsContainer>
