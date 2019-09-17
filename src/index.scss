@@ -190,4 +190,8 @@ $stars-big: stars(100);
     z-index: 2;
 }
 
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
 
