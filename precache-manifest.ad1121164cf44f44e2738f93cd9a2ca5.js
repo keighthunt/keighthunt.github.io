@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "a74b2313e93d57f8fc56",
-    "url": "/static/css/main.0216ba18.chunk.css"
+    "revision": "cd9c2c225a9264e8cde4",
+    "url": "/static/css/main.07c7364f.chunk.css"
   },
   {
-    "revision": "a74b2313e93d57f8fc56",
+    "revision": "cd9c2c225a9264e8cde4",
     "url": "/static/js/main.1a80be63.chunk.js"
   },
   {
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/thetimes-store.c0b2827d.png"
   },
   {
-    "revision": "aa8995b06d792076dfb54e97e6c349e3",
+    "revision": "65cf4fc727519416c4a3cae6d095fe2e",
     "url": "/index.html"
   }
 ];
