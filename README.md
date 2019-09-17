@@ -1,2 +1,0 @@
-Kate Hunt Portfolio
-React
