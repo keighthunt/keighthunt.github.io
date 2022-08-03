@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 const SkillsContainer = styled.div`
 	background: white;
-	margin-top: -87px;
 	box-shadow: 1px 1px 5px #ccc;
 	border-radius: 10px;
 	border: 1px solid #f5f5f5;
@@ -20,10 +19,6 @@ const SkillsContainer = styled.div`
 		}
 
 		h3 {
-			font-family: 'Lobster',cursive;
-			font-size: 30px;
-		}
-		h4 {
 			color: #2b5876;
 			font-weight: bold;
 			margin: 3vh;
@@ -48,7 +43,7 @@ const SkillType = ({
 }) => {
 	return(
 		<InView id={`skill-type-${index}`} animate={'height'} className={"skill-subtype"}>
-			<h4>{skill.title}</h4>
+			<h3>{skill.title}</h3>
 			{skill.content.map((content, i)=>{
 				return (
 					<p key={content + i}>{content}</p>
@@ -68,7 +63,6 @@ export default class Skills extends Component {
                 name={"Skills"}
                 color={'#fff'}
                 padding={'0 0 30px;'}
-                noHeader
             >
 	        	<SkillsContainer>
 	        		<div className={"skill-type"}>

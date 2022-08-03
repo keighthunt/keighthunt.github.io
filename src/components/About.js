@@ -32,7 +32,7 @@ export default class About extends Component {
             <Section
                 name={"About"}
                 color={'#f5f5f5'}
-                padding={"30px 0 70px;"}
+                padding={"30px 0 0;"}
             >
                 <div>
                     <AboutSection>

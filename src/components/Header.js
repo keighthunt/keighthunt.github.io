@@ -210,13 +210,16 @@ const Navigation = styled.nav`
                 display: none;
             }
             a {
-                display: inline-block;
                 text-transform: uppercase;
-                width: 20%;
                 padding: 16px 0;
                 text-align: center;
                 cursor: pointer;
+                display: block;
             }
+        }
+        #menu {
+            display: flex;
+            justify-content: space-between;
         }
     }
 `;
@@ -285,7 +288,7 @@ export default class Header extends Component {
                                         <li>
                                             <a key={`#${item}`} href={"#" + item} onClick={()=>{
                                                 this.refs.menu.checked = !this.refs.menu.checked
-                                            }}><li>{item}</li></a>
+                                            }}>{item}</a>
                                         </li>
                                     )
                                 })

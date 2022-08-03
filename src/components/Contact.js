@@ -38,7 +38,7 @@ export default class Contact extends Component {
 	        		<ContactIcon href={Pdf} target="_blank">
 	            		<img src={cv} alt={"Open CV"}/>
 	        		</ContactIcon>
-	        		<p>Kate Hunt &#9400;</p>
+	        		<p>Kate Knight &#9400;</p>
         		</IconContainer>
             </Section>
         );
