@@ -1,22 +1,22 @@
 self.__precacheManifest = [
   {
-    "revision": "cd9c2c225a9264e8cde4",
-    "url": "/static/css/main.07c7364f.chunk.css"
+    "revision": "f2a83eba07787d35f5b2",
+    "url": "/static/css/main.2bf102aa.chunk.css"
   },
   {
-    "revision": "cd9c2c225a9264e8cde4",
-    "url": "/static/js/main.1a80be63.chunk.js"
+    "revision": "f2a83eba07787d35f5b2",
+    "url": "/static/js/main.06f7b413.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "b990d4e01f57a2f699aa",
-    "url": "/static/css/2.302386a8.chunk.css"
+    "revision": "c0e04a5d7a6fc66712f1",
+    "url": "/static/css/2.14cf1a72.chunk.css"
   },
   {
-    "revision": "b990d4e01f57a2f699aa",
+    "revision": "c0e04a5d7a6fc66712f1",
     "url": "/static/js/2.e95ba45a.chunk.js"
   },
   {
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/thetimes-store.c0b2827d.png"
   },
   {
-    "revision": "65cf4fc727519416c4a3cae6d095fe2e",
+    "revision": "5125954278b09f2b6fa3eb24149979a6",
     "url": "/index.html"
   }
 ];
