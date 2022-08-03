@@ -2,9 +2,9 @@ let resumeData = {
     "navigation": ["About", "Experience", "Skills", "Portfolio", "Contact"],
     "about": [
         "Hello!",
-        "I’m a London, UK based Front End Developer, with over 7 years of professional experience and a passion for UX design and software architecture. I gathered my experience through exposure to many types of business, with e-commerse being a very large part, but also travel to finance.",
-        "In the past year my career has taken me to a different level and I’m currently refining my managerial style as a Lead Developer, spending large parts of my time mentoring and helping others flourish.",
-        "I most prefer working in an agile way (with the exception of hot desking!)"
+        "I’m a London, UK based Front End Developer, with over 9 years of professional experience and a passion for UX design and software architecture. I gathered my experience through exposure to many types of business, with e-commerse being a very large part, but also travel to finance, and now sports.",
+        "Over my career I've proven the ability to lead and manage teams of developers, deliver high-quality work on tight deadlines, and stay up to date on the latest industry trends.",
+        "I’m currently refining my managerial style as a Lead Developer, spending large parts of my time mentoring and helping others flourish."
     ],
     "skills": {
         "left": [
@@ -39,17 +39,14 @@ let resumeData = {
             {
                 "title": "Experience Working with",
                 "content": [
+                    "AWS",
                     "Docker",
                     "Jenkins",
                     "CI",
                     "PostgreSQL",
                     "MySQL",
                     "Google analytics",
-                    "Google Tag Manager",
-                    "Sentry",
-                    "Loggly",
-                    "Visual Website Optimizer",
-                    "Optimizely"
+                    "Google Tag Manager"
                 ]
             },
             {
@@ -64,9 +61,15 @@ let resumeData = {
     },
     "experience": [
         {
-            "company":"Cult Beauty",
+            "company": "Pulselive Ltd",
+            "job_title": ["Senior Front Developer"],
+            "dates": "March 2020 - Present",
+            "icon": "work"
+        },
+        {
+            "company": "Cult Beauty",
             "job_title": ["Lead Front End Developer"],
-            "dates": "March 2017 - Present",
+            "dates": "March 2017 - March 2020",
             "icon": "work"
         },
         {

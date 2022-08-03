@@ -282,9 +282,11 @@ export default class Header extends Component {
                             {
                                 navigation && navigation.map((item, i)=>{
                                     return(
-                                        <a key={`#${item}`} href={"#" + item} onClick={()=>{
-                                            this.refs.menu.checked = !this.refs.menu.checked
-                                        }}><li>{item}</li></a>
+                                        <li>
+                                            <a key={`#${item}`} href={"#" + item} onClick={()=>{
+                                                this.refs.menu.checked = !this.refs.menu.checked
+                                            }}><li>{item}</li></a>
+                                        </li>
                                     )
                                 })
                             }
