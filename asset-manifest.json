@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a7ea274.css",
+    "main.css": "/static/css/main.f22b6059.css",
     "main.js": "/static/js/main.061d6577.js",
     "static/media/wallpaper.png": "/static/media/wallpaper.3090f11484d473435007.png",
     "static/media/thetimes-store.png": "/static/media/thetimes-store.4d4245938cc53286aad0.png",
@@ -16,11 +16,11 @@
     "static/media/cancel.svg": "/static/media/cancel.1beada82eba4209da5072894d43fcc80.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.03f1d164221e3a81954e6ec24a350288.svg",
     "index.html": "/index.html",
-    "main.8a7ea274.css.map": "/static/css/main.8a7ea274.css.map",
+    "main.f22b6059.css.map": "/static/css/main.f22b6059.css.map",
     "main.061d6577.js.map": "/static/js/main.061d6577.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a7ea274.css",
+    "static/css/main.f22b6059.css",
     "static/js/main.061d6577.js"
   ]
 }
