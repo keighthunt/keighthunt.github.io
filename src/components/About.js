@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import {Section, ColumnHalf} from './Shared';
-import kate from '../img/katehunt.png';
+import kate from '../img/kateknight.png';
 
 const AboutSection = styled(ColumnHalf)`
     align-items: flex-end;
@@ -46,7 +46,7 @@ export default class About extends Component {
                             }
                         </div>
                         <div className={'right'}>
-                            <img style={{maxHeight: '250px'}} src={kate} alt="Kate Hunt portrait" />
+                            <img style={{maxHeight: '250px'}} src={kate} alt="Kate Knight portrait" />
                         </div>
                     </AboutSection>
                 </div>

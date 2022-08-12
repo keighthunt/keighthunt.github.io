@@ -260,7 +260,7 @@ export default class Header extends Component {
                         <div className="header-container">
                             <div className="text">
                                 <h1 className="animate"><Color color="#fff">Kate</Color></h1>
-                                <h1 className="animate delay-1"><Color color="#fff"> Hunt</Color></h1>
+                                <h1 className="animate delay-1"><Color color="#fff"> Knight</Color></h1>
                             </div>
                             <div className="text">
                                 <h1 className="animate delay-2">Front End Developer</h1>

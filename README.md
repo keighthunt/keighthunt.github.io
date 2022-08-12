@@ -1,2 +1,2 @@
-Kate Hunt Portfolio
+Kate Knight Portfolio
 React

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import {Section} from './Shared';
-import Pdf from '../assets/Kate_Hunt_CV.pdf';
+import Pdf from '../assets/Kate_Knight_CV.pdf';
 import linkedIn from '../assets/linkedin.svg';
 import github from '../assets/github.svg';
 import cv from '../assets/resume.svg';
